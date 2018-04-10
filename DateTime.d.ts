@@ -137,6 +137,7 @@ declare namespace ReactDatetimeClass {
          props for the cell, the month and the year to be shown, and must return a
          React component. See appearance customization
          */
+        renderInput?: (props: any, openCalendar: () => void, closeCalendar: () => void) => void;
         renderMonth?: (props: any, month: number, year: number, selectedDate: any) => JSX.Element;
         /*
          Customize the way that the years are shown in the year picker.
